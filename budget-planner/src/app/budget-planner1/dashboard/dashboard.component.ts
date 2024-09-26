@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
 export class DashboardComponent {
 
 
-  constructor(public router:Router){}
+constructor(public router:Router){}
 
   //Income
 lastMonthsIncome = ['January: $1000','February: $1500','March: $1200'];
@@ -38,13 +38,13 @@ totalCurrentMonthIncome = 2000;
 totalCurrentMonthExpense = 1500;
 
 onIncome(){
-  this.router.navigate(['/budget-planner/income'])
+  this.router.navigate(['/budget-planner1/income'])
 }
 onExpense(){
-  this.router.navigate(['/budget-planner/expense'])
+  this.router.navigate(['/budget-planner1/expense'])
 }
 onTodo(){
-  this.router.navigate(['/budget-planner/todo'])
+  this.router.navigate(['/budget-planner1/todo'])
 }
 
 get currentMonthSavings(): number{
